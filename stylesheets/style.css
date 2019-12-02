@@ -12,7 +12,7 @@
 
 .row {
     display: flex;
-    background: rgb(92, 3, 20);
+    background: royalblue;
 }
 
 .row div {
@@ -22,7 +22,7 @@
     border: 3px solid black;
     margin: 3px;
     color: black;
-    font-size: 60px;
+    font-size: 150px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     
@@ -35,10 +35,25 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/Halback.png);
+    
 }
 
+
 button{
-    color: green;
-    font-size: xx-large;
+    color: purple;
+    font-size: 60px;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: solid black;
+   
     
+}
+#playerO{
+    align-self: flex-end;
+
+}
+#playerX{
+    align-self: flex-end;
+
 }
