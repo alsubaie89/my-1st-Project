@@ -1,118 +1,89 @@
 const clickS = new Audio('../audio/Click2-Seba.mp3')
 const winS = new Audio('../audio/dixie-hornWins.mp3')
 
-let chWinnerX = function(){
+let chWinner = function(){
   //rows
-    if ($('#b1-1').text() == "X" && $('#b1-2').text() == "X" && $('#b1-3').text() == "X"){
-    setTimeout(function(){ 
-        swal('x win')} ,500 , winS.play())
-    $('div.row div').off();
-}
+  
+    if ($('#b1-1').text() == $('#b1-2').text() && $('#b1-2').text() == $('#b1-3').text() && $('#b1-1').text() != '') {
+    setTimeout(function(){
+        
+        alert('the winner is '+ $('#b1-3').text() )} ,500 , winS.play())
+        $('div.row div').off();
+        
+       
+    }
+    
 
-    else if ($('#b2-1').text() == "X" && $('#b2-2').text() == "X" && $('#b2-3').text() == "X") {
+    else if ($('#b2-1').text() === $('#b2-2').text() && $('#b2-2').text() === $('#b2-3').text() && $('#b2-1').text() != '') {
         setTimeout(function(){
-            swal('x win')} ,500 , winS.play())
+            
+            alert('the winner is '+ $('#b2-3').text() )} ,500 , winS.play())
             $('div.row div').off();
+           
+            
         }
-    else if ($('#b3-1').text() == "X" && $('#b3-2').text() == "X" && $('#b3-3').text() == "X") {
+    
+
+    else if ($('#b3-1').text() === $('#b3-2').text() && $('#b3-2').text() === $('#b3-3').text() && $('#b3-1').text() != '') {
         setTimeout(function(){
-            swal('x win')} ,500 , winS.play())
+            
+            alert('the winner is '+ $('#b3-3').text() )} ,500 , winS.play())
             $('div.row div').off();
+            
         }
+    
   
   //columns
-        else if ($('#b1-3').text() == "X" && $('#b2-3').text() == "X" && $('#b3-3').text() == "X"){
-            setTimeout(function(){
-                swal('x win')} ,500 , winS.play())
-                $('div.row div').off();
-         }
-
-    else if ($('#b1-2').text() == "X" && $('#b2-2').text() == "X" && $('#b3-2').text() == "X") {
-        setTimeout(function(){
-            swal('x win')} ,500 , winS.play())
-            $('div.row div').off();
-        }
-    else if ($('#b1-1').text() == "X" && $('#b2-1').text() == "X" && $('#b3-1').text() == "X") {
-        setTimeout(function(){
-            swal('x win')} ,500 , winS.play())
-            $('div.row div').off();
-        }
- 
+  else if ($('#b1-3').text() === $('#b2-3').text() && $('#b2-3').text() === $('#b3-3').text() && $('#b1-3').text() != '') {
+    setTimeout(function(){
         
-  // crossing
-    else if ($('#b1-3').text() == "X" && $('#b2-2').text() == "X" && $('#b3-1').text() == "X") {
-        setTimeout(function(){
-            swal('x win')} ,500 , winS.play())
-            $('div.row div').off();
-        }
-    else if ($('#b1-1').text() == "X" && $('#b2-2').text() == "X" && $('#b3-3').text() == "X") {
-        setTimeout(function(){
-            swal('x win')} ,500 , winS.play())
+        alert('the winner is '+ $('#b3-3').text() )} ,500, winS.play())
         $('div.row div').off();
-        }
+        
+    }
 
 
-}
-
-
-let chWinnerO = function(){
-    
-    //rows
-       if ($('#b1-1').text() == "O" && $('#b1-2').text() == "O" && $('#b1-3').text() == "O"){
-        setTimeout(function(){
-            swal('O win')} ,500 , winS.play())
-        $('div.row div').off();
-     }
-   
-       else if ($('#b2-1').text() == "O" && $('#b2-2').text() == "O" && $('#b2-3').text() == "O") {
-        setTimeout(function(){
-            swal('O win')} ,500 , winS.play() )
-        $('div.row div').off();
-           }
-       else if ($('#b3-1').text() == "O" && $('#b3-2').text() == "O" && $('#b3-3').text() == "O") {
-        setTimeout(function(){
-            swal('O win')} ,500 , winS.play())
-        $('div.row div').off();
-           }
-     
-           
-  //columns
-       else if ($('#b1-3').text() == "O" && $('#b2-3').text() == "O" && $('#b3-3').text() == "O"){
-        setTimeout(function(){
-            swal('O win')} ,500 , winS.play())
-            $('div.row div').off();
-         }
-   
-       else if ($('#b1-2').text() == "O" && $('#b2-2').text() == "O" && $('#b3-2').text() == "O") {
-        setTimeout(function(){
-            swal('O win')} ,500 , winS.play())
-            $('div.row div').off();
-           }
-       else if ($('#b1-1').text() == "O" && $('#b2-1').text() == "O" && $('#b3-1').text() == "O") {
-        setTimeout(function(){
-            swal('O win')} ,500 , winS.play())
-            $('div.row div').off();
-        }
-     
-
-    //crossing
-       else if ($('#b1-3').text() == "O" && $('#b2-2').text() == "O" && $('#b3-1').text() == "O") {
-        setTimeout(function(){
-            swal('O win')} ,500 , winS.play())
-            $('div.row div').off();
-        }
-        else if ($('#b1-1').text() == "O" && $('#b2-2').text() == "O" && $('#b3-3').text() == "O") {
+        else if ($('#b1-2').text() === $('#b2-2').text() && $('#b2-2').text() === $('#b2-3').text() && $('#b1-2').text() != '') {
             setTimeout(function(){
-                swal('O win')} ,500 , winS.play())
+                
+                alert('the winner is '+ $('#b2-3').text() )} ,500, winS.play())
                 $('div.row div').off();
-       }
-    
-   
-   
+                
+            }
+
+      
+
+    else if ($('#b1-1').text() === $('#b2-1').text() && $('#b2-1').text() === $('#b3-1').text() && $('#b1-1').text() != '') {
+        setTimeout(function(){
+            
+            alert('the winner is '+ $('#b3-1').text() )} ,500, winS.play())
+            $('div.row div').off();
+            
+        }
+        
+        
+        // crossing
+
+  else if ($('#b1-3').text() === $('#b2-2').text() && $('#b2-2').text() === $('#b3-1').text() && $('#b1-3').text() != '') {
+    setTimeout(function(){
+        
+        alert('the winner is '+ $('#b3-1').text() )} ,500, winS.play())
+        $('div.row div').off();
+        
+    }
+
+
+
+    else if ($('#b1-1').text() === $('#b2-2').text() && $('#b2-2').text() === $('#b3-3').text() && $('#b1-1').text() != '') {
+        setTimeout(function(){
+            
+            alert('the winner is '+ $('#b3-3').text() )} ,500, winS.play())
+            $('div.row div').off();
+        }
+        
+
+
 }
-
-    
-
 
 
 
@@ -129,8 +100,8 @@ $(function(){
         $(event.target).css('color','black');
         $(event.target).off();
         clickS.play();
-        chWinnerX();
-        
+        // chWinnerX();
+        chWinner();
         
         
         
@@ -141,10 +112,11 @@ $(function(){
         $(event.target).css('color','beige');
         $(event.target).off();
         clickS.play();
-        chWinnerO();
         
-        
-    }
+        // chWinnerO();
+        // chWinnerX();
+        chWinner();
+      }
         
     })
 
@@ -161,7 +133,8 @@ $(function(){
                 $(event.target).css('color','black');
                 $(event.target).off();
                 clickS.play();
-                chWinnerX();
+                
+                chWinner();
                 
                 
 
@@ -172,7 +145,8 @@ $(function(){
             $(event.target).css('color','beige');
             $(event.target).off('');
             clickS.play();
-                chWinnerO();
+                
+                chWinner();
                
                 
             }
