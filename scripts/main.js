@@ -7,7 +7,7 @@ let chWinner = function(){
     if ($('#b1-1').text() == $('#b1-2').text() && $('#b1-2').text() == $('#b1-3').text() && $('#b1-1').text() != '') {
     setTimeout(function(){
         
-        alert('the winner is '+ $('#b1-3').text() )} ,500 , winS.play())
+        swal('the winner is '+ $('#b1-3').text() )} ,500 , winS.play())
         $('div.row div').off();
         
        
@@ -17,7 +17,7 @@ let chWinner = function(){
     else if ($('#b2-1').text() === $('#b2-2').text() && $('#b2-2').text() === $('#b2-3').text() && $('#b2-1').text() != '') {
         setTimeout(function(){
             
-            alert('the winner is '+ $('#b2-3').text() )} ,500 , winS.play())
+            swal('the winner is '+ $('#b2-3').text() )} ,500 , winS.play())
             $('div.row div').off();
            
             
@@ -27,7 +27,7 @@ let chWinner = function(){
     else if ($('#b3-1').text() === $('#b3-2').text() && $('#b3-2').text() === $('#b3-3').text() && $('#b3-1').text() != '') {
         setTimeout(function(){
             
-            alert('the winner is '+ $('#b3-3').text() )} ,500 , winS.play())
+            swal('the winner is '+ $('#b3-3').text() )} ,500 , winS.play())
             $('div.row div').off();
             
         }
@@ -37,7 +37,7 @@ let chWinner = function(){
   else if ($('#b1-3').text() === $('#b2-3').text() && $('#b2-3').text() === $('#b3-3').text() && $('#b1-3').text() != '') {
     setTimeout(function(){
         
-        alert('the winner is '+ $('#b3-3').text() )} ,500, winS.play())
+        swal('the winner is '+ $('#b3-3').text() )} ,500, winS.play())
         $('div.row div').off();
         
     }
@@ -46,7 +46,7 @@ let chWinner = function(){
         else if ($('#b1-2').text() === $('#b2-2').text() && $('#b2-2').text() === $('#b2-3').text() && $('#b1-2').text() != '') {
             setTimeout(function(){
                 
-                alert('the winner is '+ $('#b2-3').text() )} ,500, winS.play())
+                swal('the winner is '+ $('#b2-3').text() )} ,500, winS.play())
                 $('div.row div').off();
                 
             }
@@ -56,7 +56,7 @@ let chWinner = function(){
     else if ($('#b1-1').text() === $('#b2-1').text() && $('#b2-1').text() === $('#b3-1').text() && $('#b1-1').text() != '') {
         setTimeout(function(){
             
-            alert('the winner is '+ $('#b3-1').text() )} ,500, winS.play())
+            swal('the winner is '+ $('#b3-1').text() )} ,500, winS.play())
             $('div.row div').off();
             
         }
@@ -67,7 +67,7 @@ let chWinner = function(){
   else if ($('#b1-3').text() === $('#b2-2').text() && $('#b2-2').text() === $('#b3-1').text() && $('#b1-3').text() != '') {
     setTimeout(function(){
         
-        alert('the winner is '+ $('#b3-1').text() )} ,500, winS.play())
+        swal('the winner is '+ $('#b3-1').text() )} ,500, winS.play())
         $('div.row div').off();
         
     }
@@ -77,7 +77,7 @@ let chWinner = function(){
     else if ($('#b1-1').text() === $('#b2-2').text() && $('#b2-2').text() === $('#b3-3').text() && $('#b1-1').text() != '') {
         setTimeout(function(){
             
-            alert('the winner is '+ $('#b3-3').text() )} ,500, winS.play())
+            swal('the winner is '+ $('#b3-3').text() )} ,500, winS.play())
             $('div.row div').off();
         }
         
