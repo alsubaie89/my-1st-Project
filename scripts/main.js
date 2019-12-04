@@ -1,5 +1,6 @@
 const clickS = new Audio('../audio/Click2-Seba.mp3')
 const winS = new Audio('../audio/dixie-hornWins.mp3')
+let x=0
 
 let chWinner = function(){
   //rows
@@ -81,7 +82,12 @@ let chWinner = function(){
             $('div.row div').off();
         }
         
-
+        else if (x === 9) {
+            setTimeout(function(){
+                swal('Tie')} ,500)
+                $('div.row div').off();
+            }
+            console.log(x)
 
 }
 
@@ -91,7 +97,7 @@ let chWinner = function(){
 
 $(function(){
 
-    let x=0
+    
     $('div.row div').on('click', function(event){
         x +=1
         if (x %2 ==0){
