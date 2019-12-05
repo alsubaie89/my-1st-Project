@@ -18,10 +18,12 @@ here are lists of programing language i used
 - Front End
     * HTML
     * CSS
+
+I made the screen "responsive"  which can be viewd on mobile screen with max 576px. 
     
 ## About the game
 its a Tic Tac Toe game designed with js and jquery, i added some interaction effects and attractive prototype to make the design looks simple and attractive.
-i used
+
 
 ## rules
     1. two player start the game and click a single cube one by one player"X" then player"O" and so on 
