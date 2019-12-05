@@ -9,25 +9,34 @@ the first who complete 3 lines wins.
 
 ## design
  i started designing the prototype on paper and orgnise them 
-then used Visual studio code
+then used Visual studio code as a platform.
 
-<!-- lists -->
-* Js 
-* Jquery
--Front End
+here are lists of programing language i used
+- Back End
+    * Js 
+    * Jquery
+- Front End
     * HTML
     * CSS
     
-<!-- oredered lists -->
-    1. One
-    2. Two
-    3. Three
+## About the game
+its a Tic Tac Toe game designed with js and jquery, i added some interaction effects and attractive prototype to make the design looks simple and attractive.
+i used
+
+## rules
+    1. two player start the game and click a single cube one by one player"X" then player"O" and so on 
+    2. the first who make tick 3 sign in one direction whether it's Vertical, Horizontal or Cross will receive an alert to say who is the winner.
+    3. if both players played and ended-up with no victory, an alert would say the result is 'Tie' .
 
 <!-- links -->
 [google](http://google.com)
 
-<!-- images -->
-![wireframe]()
+i used a "swing" effect in animatoin.CSS
+here is a link for animation resource i used with Animation.css
+[animation resources](https://daneden.github.io/animate.css/)
+
+<!-- images
+![wireframe]() -->
 
 ---
 <!-- to make it js framed n colored as it is -->

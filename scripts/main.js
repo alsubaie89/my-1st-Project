@@ -1,6 +1,6 @@
-const clickS = new Audio('../audio/Click2-Seba.mp3')
-const winS = new Audio('../audio/dixie-hornWins.mp3')
-let x=0
+const clickS = new Audio('scripts/../audio/Click2-Seba.mp3')
+const winS = new Audio('scripts/../audio/dixie-hornWins.mp3')
+let counter = 0
 
 let chWinner = function(){
   //rows
@@ -82,12 +82,12 @@ let chWinner = function(){
             $('div.row div').off();
         }
         
-        else if (x === 9) {
+        else if (counter === 9) {
             setTimeout(function(){
                 swal('Tie')} ,500)
                 $('div.row div').off();
             }
-            console.log(x)
+            
 
 }
 
@@ -99,8 +99,8 @@ $(function(){
 
     
     $('div.row div').on('click', function(event){
-        x +=1
-        if (x %2 ==0){
+        counter +=1
+        if (counter %2 ==0){
         $(event.target).text('X');
         $(event.target).css('background','white');
         $(event.target).css('color','black');
@@ -132,8 +132,8 @@ $(function(){
         $('div.row div').css('color','black');
 
         $('div.row div').on('click', function(event){
-            x +=1
-            if (x %2 ==0){
+            counter +=1
+            if (counter %2 ==0){
                 $(event.target).text('X');
                 $(event.target).css('background','beige');
                 $(event.target).css('color','black');
