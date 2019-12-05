@@ -12,7 +12,7 @@ the first who complete 3 lines wins.
 then used Visual studio code as a platform.
 
 here are lists of programing language i used
-- Back End
+- Front End
     * Js 
     * Jquery
 - Front End

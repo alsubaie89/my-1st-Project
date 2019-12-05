@@ -109,8 +109,6 @@ $(function(){
         // chWinnerX();
         chWinner();
         
-        
-        
         }
            
         else {$(event.target).text('O');
@@ -142,8 +140,6 @@ $(function(){
                 
                 chWinner();
                 
-                
-
                 
             }
             else {$(event.target).text('O');
