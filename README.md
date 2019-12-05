@@ -29,11 +29,13 @@ i used
     3. if both players played and ended-up with no victory, an alert would say the result is 'Tie' .
 
 <!-- links -->
-[google](http://google.com)
+here is my game's link
+[Tic Tac Toc](https://alsubaie89.github.io/my-1st-Project/)
 
 i used a "swing" effect in animatoin.CSS
 here is a link for animation resource i used with Animation.css
 [animation resources](https://daneden.github.io/animate.css/)
+
 
 <!-- images
 ![wireframe]() -->
