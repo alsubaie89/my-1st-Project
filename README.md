@@ -39,11 +39,50 @@ here is a link for animation resource i used with Animation.css
 ![wireframe]() -->
 
 ---
-<!-- to make it js framed n colored as it is -->
-```js 
-let a = function
+## coding
+my first phase after prototyping on HTML and CSS to to the desired design, i planned and
+started my pseudocode by writing the process
+at first
+then jumped to programming
+ i wrote my varuables  then i started my "if"conditions was 16 lines 
+it worked perfectly but unfortunatly was too long and too much codeing as bellow
+``` js 
+let chWinnerX = function(){
+  //rows
+    if ($('#b1-1').text() == "X" && $('#b1-2').text() == "X" && $('#b1-3').text() == "X"){setTimeout(function(){ 
+        swal('x win')} ,500 , winS.play())
+    $('div.row div').off();  
+}
 ```
 
+after that i relised that i should simplify the if conditions so i re-coded againg from start and i made it 8 lines wich orked for both results "X" and "O" .
+``` js
+let chWinner = function(){
+
+  
+    if ($('#b1-1').text() == $('#b1-2').text() && $('#b1-2').text() == $('#b1-3').text() && $('#b1-1').text() != '') {
+    setTimeout(function(){
+        swal('the winner is '+ $('#b1-3').text() )} ,500 , winS.play())
+        $('div.row div').off();
+```
+
+
+
+ the ninth line was for "Tie" as counter and set to === 9
+ ``` js
+ else if (counter === 9) {
+            setTimeout(function(){
+                swal('Tie')} ,500)
+                $('div.row div').off();
+            }
+
+ ```
+
+at last i had a 'Reset' button to replay again without refreshing the page
+and now worked perfectly 
+
+
+thanks for your time
 
 
 
